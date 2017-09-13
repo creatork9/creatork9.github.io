@@ -1,0 +1,207 @@
+body {
+    height: 1000px;
+    width: auto;
+    margin: auto;
+}
+.controls {
+    display: none;
+    box-sizing: content-box;
+    z-index: 999999;
+    border-radius: 5px;
+    transition: 1s;
+    bottom: 0;
+    text-align: center;
+    z-index: 9989;
+    width: 305px;
+    color: aqua;
+    position: fixed;
+    -webkit-transition: 2s;
+    transition: 1s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+#mini-play {
+    height: 200px;
+    background: url(../icon/mini-play.jpg);
+    background-size: 200px 200px;
+}
+#hide-mini {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 0px;
+    top: -10px;
+}
+
+.container-player {
+    display: block;
+    height: 130px;
+    box-sizing: content-box;
+    z-index: 999999;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    transition: 1s;
+    bottom: 0;
+    width: 99.9%;
+    z-index: 9989;
+    position: fixed;
+    background-color: dimgrey;
+    color: black;
+    margin-left: 2px;
+    -webkit-transition: 2s;
+    transition: 1s;
+}
+.container-player ul li {
+  list-style: none;
+  text-align: center;
+  line-height: 2em;
+  overflow-y: hidden;
+}
+.container-player ul li:nth-of-type(1) {
+  font-size: 22px;
+  height: auto;
+  width: 95%;
+}
+.container-player ul li:nth-of-type(2) {
+  font-size: 18px;
+  height: auto;
+  width: 70%;
+  line-height: 24px;
+}
+.info {
+    float: right;
+    width: 500px;
+    height: 70%;
+    text-align: center;
+    color: hotpink;
+    margin: auto;
+    margin-top: -20px;
+    margin-right: 30%;
+}
+#track-bar-container {
+  height: 3px;
+  width: 100%;
+  position: relative;
+  padding-top: 3.5px;
+  cursor: pointer;
+}
+#track-bar-container #track-bar {
+  height: 4px;
+  margin-top: -3px;
+  background-color: aliceblue;
+  position: relative;
+}
+#track-bar-container #track-bar span {
+  position: absolute;
+}
+#track-bar-container #track-bar span:nth-of-type(1) {
+  left: calc(0% - 50px);
+}
+#track-bar-container #track-bar span:nth-of-type(2) {
+  right: calc(0% - 50px);
+}
+#track-bar-container #track-bar:hover {
+    background-color: lightskyblue;
+}
+#fader {
+  height: 4px;
+  width: 0;
+  background-color: red;
+ -webkit-transition: 0.2s;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ border-radius: 5px;
+ transition: 0.7s;
+}
+#fader:hover {
+    height: 7px;
+    background-color: red;
+    -webkit-transition: 0.2s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    transition: 0.7s;
+}
+#hide-player {
+    height: 10px;
+    width: 20px;
+    margin-top: -50px;
+}
+#hide-player:hover {
+    cursor: pointer;
+}
+#play-btn {
+  background: url(../icon/play.png) no-repeat;
+  background-size: 70px 70px;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 45px;
+  left: 5%;
+  cursor: pointer;
+}
+#next-btn {
+    background: url(../icon/next.png) no-repeat;
+    background-size: 50px 50px;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 55px;
+    left: 10%;
+    cursor: pointer;
+}
+#playback-time {
+  padding-left: 15%;
+  margin-top: -20px;
+}
+#volume-container {
+  width: 40px;
+  position: relative;
+  height: 40px;
+  cursor: pointer;
+  -webkit-transition: margin-top 1s;
+}
+
+#volume-container img {
+  width: 26px;
+  height: auto;
+  left: 0px;
+  top: -10px;
+  position: relative;
+  z-index: 30;
+}
+#volume-container input[type=range] {
+   display: none;
+  -webkit-appearance: none;
+  transform: rotate(-90deg);
+  outline: 0;
+  position: relative;
+  top: 20px;
+  left: -40px;
+  background-color: #EBEBEB;
+  height: 5px;
+  width: 90px;
+  border-radius: 6px;
+}
+#volume-container input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 10px;
+  border-radius: 50%;
+  background: black;
+}
+#volume-container:hover input[type=range] {
+  display: block;
+  margin-top: 5px;
+  cursor: pointer;
+}
+#volume-container:hover {
+  margin-top: -90px;
+  height: 100px;
+  cursor: pointer;
+  -webkit-transition: margin-top 1s;
+}
+.clean {
+    clear: both;
+}

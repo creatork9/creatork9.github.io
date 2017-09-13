@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+	<title>Home Music</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a class="list" href="#">Di de tro ve</a></li>
+            <li><a class="list" href="#">Despacito</a></li>
+        </ul>
+    </div>
+<!--Mini player-->
+    <div class="controls">
+        <img id="hide-mini" alt="pic" src="icon/x.png">
+        <div id="mini-play">
+        </div>
+        <audio class="audio" controls preload="none">
+            <source id="mp3-src" src="" type="audio/mp3">
+        </audio>
+    </div>
+<!--Player controls-->
+    <section class="container-player">
+        <div id="track-bar-container">
+            <div id="track-bar">
+                <div id="progress-bar"></div>
+                <div id="fader"></div>
+            </div>
+        </div>
+        <img id="hide-player" alt="pic" src="icon/down.png">
+        <div class="button">
+            <div id="play-btn"></div>
+            <div id="next-btn"></div>
+        </div>
+        
+        <div class="info">
+             <ul>
+                <li id="name-song"></li>
+                <li id="author">Luis Fonsi, Daddy Yankee</li>
+            </ul>
+        </div>
+        <div class="clean"></div>
+        <span id="playback-time">0:00</span>
+        <span id="song-duration">0:00</span>
+<!--          <div id="volume-container">
+            <img src="icon/volume.png" alt="play">
+            <input type="range" min="0" max="100" value="100">
+          </div>-->
+    </section>
+    <script src="js/jsMain.js"></script>
+    <script src="js/jsPlay.js"></script>
+</body>
+</html>
